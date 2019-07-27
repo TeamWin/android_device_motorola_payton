@@ -85,9 +85,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # A/B device flags
 TARGET_NO_KERNEL := false
-#TARGET_NO_RECOVERY := true
-#BOARD_USES_RECOVERY_AS_BOOT := true
-#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+TARGET_NO_RECOVERY := false
+BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 AB_OTA_UPDATER := true
 
 # Crypto
@@ -115,7 +115,8 @@ TW_USE_TOOLBOX := true
 #TARGET_USES_LOGD := true
 
 # Workaround for error copying vendor files to recovery ramdisk
-TARGET_COPY_OUT_VENDOR := system/vendor
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Installer
 USE_RECOVERY_INSTALLER := true
