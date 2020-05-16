@@ -59,10 +59,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-# ROM fstab
-PRODUCT_COPY_FILES += \
-  device/motorola/payton/rootdir/root/fstab.qcom:root/fstab.qcom
-
 # Properties for decryption
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=sdm660 \
